@@ -88,7 +88,7 @@
                        ("rubyLsp.runTest" #'lsp-ruby-lsp--run-test)
                        ("rubyLsp.runTestInTerminal" #'lsp-ruby-lsp--run-test))
   :initialization-options '(:formatter "standard" :linters ["standard"] :enabledFeatures ["codeActions", "diagnostics", "formatting", "documentSymbols"] )
-  :server-id 'ruby-lsp-ls)
+  :server-id 'ruby-lsp-ls))
 
 (lsp-consistency-check lsp-ruby-lsp)
 
