@@ -87,7 +87,8 @@
   :action-handlers (ht ("rubyLsp.openFile" #'lsp-ruby-lsp--open-file)
                        ("rubyLsp.runTest" #'lsp-ruby-lsp--run-test)
                        ("rubyLsp.runTestInTerminal" #'lsp-ruby-lsp--run-test))
-  :server-id 'ruby-lsp-ls))
+  :initialization-options '(:formatter "standard" :linters ["standard"] :enabledFeatures ["codeActions", "diagnostics", "formatting", "documentSymbols"] )
+  :server-id 'ruby-lsp-ls)
 
 (lsp-consistency-check lsp-ruby-lsp)
 
